@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Green Motorsport - Magyar Rally Csapat | Sebesség, Szenvedély és Zöld Technológia</title>
+    <meta name="title" content="Green Motorsport - Magyar Rally Csapat | Sebesség, Szenvedély és Zöld Technológia">
+    <meta name="description" content="Magyar rally csapat - sebesség, szenvedély és zöld technológia a rally pályákon. Plesz Márk és Dombai Szabolcs vezette csapat eredményei és versenynaptára.">
+    <meta name="keywords" content="rally, motorsport, magyar rally, Green Motorsport, Plesz Márk, Dombai Szabolcs, rally csapat, Mecsek Rally, Szilveszter Rally">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="Hungarian">
+    <meta name="author" content="Green Motorsport">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greenmotorsport.hu/">
+    <meta property="og:title" content="Green Motorsport - Magyar Rally Csapat">
+    <meta property="og:description" content="Sebesség, szenvedély és zöld technológia a magyar rally pályákon. Kövesd nyomon eredményeinket és versenyeinket!">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:site_name" content="Green Motorsport">
+    <meta property="og:locale" content="hu_HU">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://greenmotorsport.hu/">
+    <meta property="twitter:title" content="Green Motorsport - Magyar Rally Csapat">
+    <meta property="twitter:description" content="Sebesség, szenvedély és zöld technológia a magyar rally pályákon. Kövesd nyomon eredményeinket és versenyeinket!">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80">
+    
+    <!-- Additional SEO -->
+    <link rel="canonical" href="https://greenmotorsport.hu/">
+    <meta name="theme-color" content="#00ff88">
+    <meta name="msapplication-TileColor" content="#00ff88">
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SportsTeam",
+      "name": "Green Motorsport",
+      "description": "Magyar rally csapat - sebesség, szenvedély és zöld technológia",
+      "sport": "Rally Racing",
+      "url": "https://greenmotorsport.hu",
+      "logo": "https://greenmotorsport.hu/logo.png",
+      "foundingDate": "2020",
+      "location": {
+        "@type": "Country",
+        "name": "Hungary"
+      },
+      "athlete": [
+        {
+          "@type": "Person",
+          "name": "Plesz Márk",
+          "jobTitle": "Pilóta"
+        },
+        {
+          "@type": "Person", 
+          "name": "Dombai Szabolcs",
+          "jobTitle": "Navigátor"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/GreenIrishMotorsport"
+      ]
+    }
+    </script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary-green: #00ff88;
+            --dark-green: #00cc6a;
+            --accent-green: #39ff14;
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --text-light: #ffffff;
+            --text-gray: #cccccc;
+            --text-muted: #888888;
+        }
+
+        body {
+            font-family: 'Rajdhani', sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url('Rally1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            filter: blur(0px);
+            transition: filter 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            .hero {
+                background-position: center;
+                background-attachment: scroll;
+                background-size: cover;
+                min-height: 100vh;
+            }
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+            z-index: 1;
+        }
+
+        .hero.blur-effect::before {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7));
+        }
+
+        .hero-content {
+            z-index: 2;
+            max-width: 800px;
+            padding: 0 20px;
+            animation: fadeInUp 0.8s ease-out;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2.5rem, 8vw, 5rem);
+            font-weight: 900;
+            margin-bottom: 20px;
+            text-shadow: 0 0 30px var(--primary-green);
+            background: linear-gradient(45deg, var(--primary-green), var(--accent-green));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            margin-bottom: 40px;
+            color: var(--text-gray);
+            font-weight: 300;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 15px 40px;
+            background: linear-gradient(45deg, var(--primary-green), var(--dark-green));
+            color: var(--dark-bg);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1rem;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0, 255, 136, 0.5);
+            background: linear-gradient(45deg, var(--accent-green), var(--primary-green));
+        }
+
+        /* Navigation */
+        .navbar {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background: rgba(10, 10, 10, 0.95);
+            backdrop-filter: blur(10px);
+            z-index: 1000;
+            padding: 15px 0;
+            transition: all 0.3s ease;
+        }
+
+        .navbar.scrolled {
+            background: rgba(10, 10, 10, 0.98);
+            box-shadow: 0 2px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-family: 'Orbitron', monospace;
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        .nav-links a {
+            color: var(--text-light);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-green);
+        }
+
+        .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--primary-green);
+            transition: width 0.3s ease;
+        }
+
+        .nav-links a:hover::after {
+            width: 100%;
+        }
+
+        .mobile-menu {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .mobile-menu span {
+            width: 25px;
+            height: 3px;
+            background: var(--primary-green);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-origin: center;
+        }
+
+        .mobile-menu.active span:nth-child(1) {
+            transform: rotate(45deg) translate(6px, 6px);
+        }
+
+        .mobile-menu.active span:nth-child(2) {
+            opacity: 0;
+            transform: scale(0);
+        }
+
+        .mobile-menu.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+        }
+
+        /* Sections */
+        .section {
+            padding: 100px 0;
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.4s ease-out;
+        }
+
+        .section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section-title {
+            font-family: 'Orbitron', monospace;
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 60px;
+            color: var(--primary-green);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 3px;
+            background: linear-gradient(45deg, var(--primary-green), var(--accent-green));
+        }
+
+        /* About Section */
+        .about-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            color: var(--text-gray);
+            line-height: 1.8;
+        }
+
+        .about-text h3 {
+            color: var(--primary-green);
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .team-members {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .member-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .member-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 136, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .member-card:hover::before {
+            left: 100%;
+        }
+
+        .member-card:hover {
+            border-color: var(--primary-green);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+        }
+
+        .member-card h4 {
+            color: var(--primary-green);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        /* Gallery Section */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            aspect-ratio: 16/9;
+            background: linear-gradient(45deg, var(--card-bg), #2a2a2a);
+            border-radius: 15px;
+            overflow: hidden;
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border: 2px solid var(--primary-green);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        .gallery-item video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover video {
+            transform: scale(1.1);
+        }
+        .gallery-item span {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: var(--primary-green);
+            font-size: 1.2rem;
+            font-weight: 600;
+            padding: 20px 15px 15px;
+            transform: translateY(100%);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item:hover span {
+            transform: translateY(0);
+        }
+
+        /* Results Section */
+        .results-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .result-card {
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 15px;
+            border-left: 5px solid var(--primary-green);
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .result-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            opacity: 0.1;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 0.3s ease;
+            z-index: 1;
+        }
+
+        .result-card.mecsek::before {
+            background-image: url('');
+        }
+
+        .result-card.szilveszter::before {
+            background-image: url('');
+        }
+
+        .result-card.eger::before {
+            background-image: url('');
+        }
+
+        .result-card.bajnoksag::before {
+            background-image: url('');
+        }
+
+        .result-card.nyari::before {
+            background-image: url('');
+        }
+
+        .result-card.debrecen::before {
+            background-image: url('');
+        }
+
+        .result-card > * {
+            position: relative;
+            z-index: 2;
+        }
+
+        .result-card:hover::before {
+            opacity: 0.2;
+        }
+
+        .result-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 5px 20px rgba(0, 255, 136, 0.2);
+        }
+
+        .result-card h4 {
+            color: var(--primary-green);
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .result-card .position {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--accent-green);
+            margin-bottom: 10px;
+        }
+
+        /* Calendar Section */
+        .calendar-events {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .calendar-events::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 4px;
+            background: linear-gradient(to bottom, var(--primary-green), var(--dark-green));
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .event-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: all 0.3s ease;
+            position: relative;
+            width: calc(50% - 40px);
+            margin-bottom: 40px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+
+        .event-card:nth-child(odd) {
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .event-card:nth-child(even) {
+            margin-left: auto;
+            margin-right: 0;
+        }
+
+        .event-card::before {
+            content: '';
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            background: var(--primary-green);
+            border-radius: 50%;
+            border: 4px solid var(--dark-bg);
+            z-index: 2;
+        }
+
+        .event-card:nth-child(odd)::before {
+            right: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .event-card:nth-child(even)::before {
+            left: -50px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .event-card:hover {
+            border-color: var(--primary-green);
+            box-shadow: 0 10px 30px rgba(0, 255, 136, 0.2);
+            transform: scale(1.02);
+        }
+
+        .event-date {
+            color: var(--primary-green);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+
+        .event-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        /* Contact Section */
+        .contact-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+
+        .contact-info {
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin: 30px 0;
+        }
+
+            .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            padding: 0;
+            background: var(--card-bg);
+            border-radius: 50%;
+            color: var(--primary-green);
+            text-decoration: none;
+            font-size: 1.5rem;
+            transition: all 0.3s ease;
+            border: 2px solid var(--primary-green);
+        }
+
+        .social-link:hover {
+            background: var(--primary-green);
+            color: var(--dark-bg);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 255, 136, 0.3);
+        }
+
+        .contact-form {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 15px;
+            border: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .contact-form:hover {
+            border-color: var(--primary-green);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--primary-green);
+            font-weight: 600;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            background: var(--dark-bg);
+            border: 2px solid #333;
+            border-radius: 8px;
+            color: var(--text-light);
+            font-family: inherit;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary-green);
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: linear-gradient(45deg, var(--primary-green), var(--dark-green));
+            color: var(--dark-bg);
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .submit-btn:hover {
+            background: linear-gradient(45deg, var(--accent-green), var(--primary-green));
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 255, 136, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--card-bg);
+            padding: 40px 0;
+            text-align: center;
+            border-top: 2px solid var(--primary-green);
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .footer .logo {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        .pulse {
+            animation: pulse 2s infinite;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: rgba(10, 10, 10, 0.98);
+                backdrop-filter: blur(15px);
+                flex-direction: column;
+                padding: 25px;
+                gap: 20px;
+                border-top: 2px solid var(--primary-green);
+                transform: translateY(-30px);
+                opacity: 0;
+                visibility: hidden;
+                transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            }
+
+            .nav-links.active {
+                display: flex;
+                transform: translateY(0);
+                opacity: 1;
+                visibility: visible;
+            }
+
+            .nav-links a {
+                padding: 12px 20px;
+                border-radius: 10px;
+                transition: all 0.3s ease;
+                transform: translateX(-30px);
+                opacity: 0;
+                animation: slideInLeft 0.4s ease forwards;
+                font-size: 1.1rem;
+                border: 2px solid transparent;
+            }
+
+            .nav-links.active a:nth-child(1) { animation-delay: 0.1s; }
+            .nav-links.active a:nth-child(2) { animation-delay: 0.15s; }
+            .nav-links.active a:nth-child(3) { animation-delay: 0.2s; }
+            .nav-links.active a:nth-child(4) { animation-delay: 0.25s; }
+            .nav-links.active a:nth-child(5) { animation-delay: 0.3s; }
+
+            .nav-links a:hover {
+                background: rgba(0, 255, 136, 0.15);
+                border-color: var(--primary-green);
+                transform: translateX(5px);
+            }
+
+            .mobile-menu {
+                display: flex;
+            }
+
+            .section {
+                padding: 50px 0;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            /* Hero mobile fixes */
+            .hero-content {
+                padding: 0 20px;
+            }
+
+            .hero h1 {
+                font-size: clamp(2rem, 12vw, 3.5rem);
+                margin-bottom: 15px;
+            }
+
+            .hero p {
+                font-size: clamp(1rem, 4vw, 1.2rem);
+                margin-bottom: 30px;
+            }
+
+            .cta-button {
+                padding: 12px 30px;
+                font-size: 1rem;
+            }
+
+            /* Calendar mobile fixes */
+            .calendar-events {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .event-card {
+                padding: 20px;
+                margin-bottom: 20px;
+            }
+
+            .event-card:hover {
+                transform: translateY(-3px);
+            }
+
+            /* Results mobile optimization */
+            .results-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .result-card {
+                padding: 20px;
+            }
+
+            /* Team members mobile */
+            .team-members {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .member-card {
+                padding: 20px;
+            }
+
+            /* Gallery mobile */
+            .gallery-grid {
+                grid-template-columns: 1fr;
+                gap: 15px;
+            }
+
+            /* Contact mobile */
+            .contact-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .contact-form {
+                padding: 20px;
+            }
+
+            .social-links {
+                gap: 15px;
+                margin: 25px 0;
+            }
+
+            .social-link {
+                padding: 12px;
+                font-size: 1.3rem;
+            }
+
+            /* Typography mobile */
+            .section-title {
+                font-size: clamp(1.8rem, 8vw, 2.5rem);
+                margin-bottom: 40px;
+            }
+
+            .about-text {
+                font-size: 1rem;
+                line-height: 1.7;
+            }
+
+            .about-text h3 {
+                font-size: 1.3rem;
+                margin-bottom: 12px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 15px;
+            }
+
+            .nav-container {
+                padding: 0 15px;
+            }
+
+            .hero-content {
+                padding: 0 15px;
+            }
+
+            .section {
+                padding: 40px 0;
+            }
+
+            .event-card {
+                padding: 15px;
+            }
+
+            .result-card,
+            .member-card {
+                padding: 15px;
+            }
+
+            .contact-form {
+                padding: 15px;
+            }
+        }
+
+        @keyframes slideInLeft {
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-content {
+                padding: 0 15px;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+
+            .member-card,
+            .result-card,
+            .event-card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">GREEN MOTORSPORT</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#about">Rólunk</a></li>
+                <li><a href="#gallery">Galéria</a></li>
+                <li><a href="#calendar">Versenynaptár</a></li>
+                <li><a href="#results">Eredmények</a></li>
+                <li><a href="#contact">Kapcsolat</a></li>
+            </ul>
+            <div class="mobile-menu" id="mobileMenu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>GREEN MOTORSPORT</h1>
+            <p>Magyar rally csapat - Sebesség, szenvedély és zöld technológia</p>
+            <a href="#about" class="cta-button pulse">Ismerd meg a csapatot</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">Rólunk</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Küldetésünk</h3>
+                    <p>A Green Motorsport egy fiatal, dinamikus magyar rally csapat, amely a sebesség iránti szenvedélyt ötvözi a környezetkímélő technológiák iránti elkötelezettségével. Célunk, hogy bebizonyítsuk: a motorsport és a fenntarthatóság kéz a kézben járhatnak.</p>
+                    <p>Csapatunk 2020-ban alakult, és azóta folyamatosan fejlődünk, mind technikai, mind sportági téren. A magyar rally közösség aktív tagjaként részt veszünk a hazai bajnokságok legfontosabb versenyein.</p>
+                </div>
+                <div class="about-text">
+                    <h3>Filozófiánk</h3>
+                    <p>Hiszünk abban, hogy a motorsport nem csak szórakozás, hanem az innováció és a műszaki fejlesztés motorja is. Minden verseny egy újabb lehetőség a tanulásra, a fejlődésre és a határok feszegetésére.</p>
+                    <p>Zöld szemléletünk nem csak a nevünkben tükröződik - törekszünk környezetbarát megoldások alkalmazására és a fenntható motorsport népszerűsítésére.</p>
+                </div>
+            </div>
+            
+            <div class="team-members">
+                <div class="member-card">
+                    <h4>Plesz Márk</h4>
+                    <p>Pilóta</p>
+                    <p>10+ év tapasztalat a rally sportban. Precizitás és sebesség mestere, aki minden kanyarban a tökéletességre törekszik.</p>
+                </div>
+                <div class="member-card">
+                    <h4>Dombai Szabolcs</h4>
+                    <p>Navigátor</p>
+                    <p>A csapat stratégiai agya, aki biztosítja, hogy minden verseny alatt a legoptimálisabb útvonalat válasszuk.</p>
+                </div>
+                <div class="member-card">
+                    <h4>Műszaki Csapat</h4>
+                    <p>Háttértámogatás</p>
+                    <p>Tapasztalt mérnökök és mechanikusok, akik gondoskodnak arról, hogy autónk minden versenyen csúcsformában legyen.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+<section id="gallery" class="section">
+    <div class="container">
+        <h2 class="section-title">Galéria & Videók</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="mecsekrally.jpg" alt="Mecsek Rally képek">
+                <span>📸 Mecsek Rally képek</span>
+            </div>
+           <div class="gallery-item">
+            <video autoplay muted loop playsinline>
+            <source src="IMG_0960.mov" type="video/mp4">
+            Videó nem támogatott.
+            </video>
+                 <span>🎥 Rally akcióban</span>
+            </div>
+            <div class="gallery-item">
+                <img src="szilveszerrally.jpg" alt="Szilveszter Rally">
+                <span>📸 Szilveszter Rally</span>
+            </div>
+            <div class="gallery-item">
+                <img src="Szervíz.jpg" alt="Műszaki áttekintő">
+                <span>📸 Műszaki áttekintő</span>
+            </div>
+            <div class="gallery-item">
+                <img src="Csapatkép.jpg" alt="Csapat fotók">
+                <span>📸 Csapat fotók</span>
+            </div>
+              <div class="gallery-item">
+            <video autoplay muted loop playsinline>
+            <source src="IMG_0406.mov" type="video/mp4">
+            Videó nem támogatott.
+            </video>
+                 <span>🎥 Téli csúszkálás</span>
+            </div>
+        </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <p style="color: var(--text-gray); font-size: 1.1rem;">
+                    További tartalmakat találsz a 
+                    <a href="https://www.facebook.com/GreenIrishMotorsport" target="_blank" style="color: var(--primary-green); text-decoration: none;">Facebook oldalunkon</a> 
+                    és hamarosan elérhető YouTube csatornánkon!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calendar Section -->
+    <section id="calendar" class="section">
+        <div class="container">
+            <h2 class="section-title">Versenynaptár 2025</h2>
+            <div class="calendar-events">
+                <div class="event-card">
+                    <div class="event-date">2025. március 15-16.</div>
+                    <div class="event-title">Mecsek Rally Pécs</div>
+                    <p>Az év első nagy megmérettetése a gyönyörű Mecsek hegységben. Kihívásokkal teli szakaszok várnak ránk.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">2025. május 10-11.</div>
+                    <div class="event-title">Eger Rally</div>
+                    <p>Hagyományos tavaszi verseny az egri borvidék lábainál. Technikás szakaszok és gyönyörű tájak.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">2025. július 5-6.</div>
+                    <div class="event-title">Nyári Bajnokság</div>
+                    <p>A bajnokság félidejénél tartó kulcsfontosságú verseny. Itt dőlhet el az idei szezon sorsa.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">2025. szeptember 20-21.</div>
+                    <div class="event-title">Őszikék Rally</div>
+                    <p>Őszi színekben pompázó erdők között kanyargó szakaszok. A természet és a sebesség találkozása.</p>
+                </div>
+                <div class="event-card">
+                    <div class="event-date">2025. december 31.</div>
+                    <div class="event-title">Szilveszter Rally</div>
+                    <p>Az év utolsó nagy versenye, ahol hagyományosan remek eredményeket érünk el. 2024-ben 1. helyet szereztünk!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Results Section -->
+    <section id="results" class="section">
+        <div class="container">
+            <h2 class="section-title">Eredményeink</h2>
+            <div class="results-grid">
+                <div class="result-card szilveszter">
+                    <div class="position">🥇 1.</div>
+                    <h4>Szilveszter Rally 2024</h4>
+                    <p>Fantasztikus évzárás! Hibátlan teljesítménnyel aranyérmet szereztünk az év utolsó versenyén.</p>
+                </div>
+                <div class="result-card mecsek">
+                    <div class="position">🥈 2.</div>
+                    <h4>Mecsek Rally 2024</h4>
+                    <p>Szoros küzdelemben második helyet értünk el a kihívásokkal teli pécsi versenyen.</p>
+                </div>
+                <div class="result-card eger">
+                    <div class="position">🥉 3.</div>
+                    <h4>Eger Rally 2024</h4>
+                    <p>A tavaszi szezonnyitón bronzéremmel mutattuk meg, hogy számolni kell velünk.</p>
+                </div>
+                <div class="result-card bajnoksag">
+                    <div class="position">🏆 5.</div>
+                    <h4>Magyar Bajnokság 2024</h4>
+                    <p>Az összesített bajnokságban 5. helyen végeztünk, ami fantasztikus eredmény egy fiatal csapat számára.</p>
+                </div>
+                <div class="result-card nyari">
+                    <div class="position">🎯 4.</div>
+                    <h4>Nyári Kupa 2024</h4>
+                    <p>A nyári versenyen 4. helyet szereztünk, értékes pontokat gyűjtve a bajnokságban.</p>
+                </div>
+                <div class="result-card debrecen">
+                    <div class="position">⭐ 6.</div>
+                    <h4>Debrecen Rally 2024</h4>
+                    <p>Műszaki problémák ellenére 6. helyen végeztünk, bizonyítva csapatunk elszántságát.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 class="section-title">Kapcsolat</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3 style="color: var(--primary-green); font-family: 'Orbitron', monospace; margin-bottom: 20px;">Lépj kapcsolatba velünk!</h3>
+                    <p style="font-size: 1.1rem; margin-bottom: 30px;">Szponzorálási lehetőségek, együttműködés vagy egyszerű érdeklődés esetén keress minket bizalommal!</p>
+                    
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/GreenIrishMotorsport" target="_blank" class="social-link" title="Facebook">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" title="YouTube">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/>
+                            </svg>
+                        </a>
+                       <a href="#" class="social-link" title="Instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <p style="color: var(--text-gray);">Kövess minket a közösségi médiában a legfrisebb hírekért és verseny beszámolókért!</p>
+                </div>
+                
+                <div class="contact-form">
+                    <h3 style="color: var(--primary-green); font-family: 'Orbitron', monospace; margin-bottom: 25px; text-align: center;">Írj nekünk</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Név *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail cím *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Tárgy</label>
+                            <input type="text" id="subject" name="subject">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Üzenet *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Írj nekünk..."></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">Üzenet küldése</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">GREEN MOTORSPORT</div>
+            <p>&copy; 2025 Green Motorsport. Minden jog fenntartva.</p>
+            <p>Magyar rally csapat - Sebesség, szenvedély, fenntarthatóság</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navbar scroll effect
+        const navbar = document.getElementById('navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle with animation
+        const mobileMenu = document.getElementById('mobileMenu');
+        const navLinks = document.getElementById('navLinks');
+        
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            mobileMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navLinks.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (!mobileMenu.contains(e.target) && !navLinks.contains(e.target)) {
+                navLinks.classList.remove('active');
+                mobileMenu.classList.remove('active');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Intersection Observer for section animations
+        const observerOptions = {
+            threshold: 0.05,
+            rootMargin: '0px 0px -20px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const subject = formData.get('subject');
+            const message = formData.get('message');
+            
+            // Simple validation
+            if (!name || !email || !message) {
+                alert('Kérjük, töltsd ki a kötelező mezőket!');
+                return;
+            }
+            
+            // Email validation
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                alert('Kérjük, adj meg egy érvényes e-mail címet!');
+                return;
+            }
+            
+            // Simulate form submission
+            const submitBtn = this.querySelector('.submit-btn');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Küldés...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                alert('Köszönjük az üzenetet! Hamarosan válaszolunk.');
+                this.reset();
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 1500);
+        });
+
+        // Gallery item click handlers
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', function() {
+                const content = this.querySelector('span').textContent;
+                
+                if (content.includes('📸')) {
+                    alert('Galéria funkció hamarosan elérhető! Kövess minket Facebookon a legfrissebb képekért.');
+                } else if (content.includes('🎥')) {
+                    alert('Videók hamarosan elérhetők lesznek YouTube csatornánkon!');
+                }
+            });
+        });
+
+        // Add parallax effect to hero section with better text protection
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const hero = document.querySelector('.hero');
+            const parallaxSpeed = 0.5;
+            const blurAmount = Math.min(scrolled / 400, 2);
+            
+            if (hero) {
+                hero.style.transform = `translateY(${scrolled * parallaxSpeed}px)`;
+                hero.style.filter = `blur(${blurAmount}px)`;
+                
+                // Darken overlay as user scrolls to protect text readability
+                if (scrolled > 100) {
+                    hero.classList.add('blur-effect');
+                } else {
+                    hero.classList.remove('blur-effect');
+                }
+            }
+        });
+
+        // Add typing effect to hero title
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            
+            function type() {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                    setTimeout(type, speed);
+                }
+            }
+            type();
+        }
+
+        // Initialize typing effect when page loads
+        window.addEventListener('load', () => {
+            const heroTitle = document.querySelector('.hero h1');
+            if (heroTitle) {
+                const originalText = heroTitle.textContent;
+                setTimeout(() => {
+                    typeWriter(heroTitle, originalText, 80);
+                }, 500);
+            }
+        });
+
+        // Add countdown timer for next race
+        function updateCountdown() {
+            const nextRace = new Date('2025-03-15').getTime();
+            const now = new Date().getTime();
+            const distance = nextRace - now;
+
+            if (distance > 0) {
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // You can add a countdown display element later if needed
+                console.log(`Következő versenyig: ${days}d ${hours}h ${minutes}m ${seconds}s`);
+            }
+        }
+
+        // Update countdown every second
+        setInterval(updateCountdown, 1000);
+
+        // Add scroll-triggered animations for cards
+        const animateCards = () => {
+            const cards = document.querySelectorAll('.member-card, .result-card, .event-card, .gallery-item');
+            
+            cards.forEach((card, index) => {
+                const cardTop = card.getBoundingClientRect().top;
+                const cardBottom = card.getBoundingClientRect().bottom;
+                const windowHeight = window.innerHeight;
+                
+                // Trigger earlier - when card is 80% visible
+                if (cardTop < windowHeight * 0.8 && cardBottom > 0) {
+                    setTimeout(() => {
+                        card.style.opacity = '1';
+                        card.style.transform = 'translateY(0)';
+                    }, index * 50); // Faster stagger - 50ms instead of 100ms
+                }
+            });
+        };
+
+        // Enhanced scroll performance and faster triggers
+        let ticking = false;
+        
+        function updateAnimations() {
+            animateCards();
+            ticking = false;
+        }
+        
+        // Optimized scroll listener with RAF
+        window.addEventListener('scroll', () => {
+            if (!ticking) {
+                requestAnimationFrame(updateAnimations);
+                ticking = true;
+            }
+        });
+        
+        // Trigger animations immediately on load
+        window.addEventListener('load', () => {
+            setTimeout(animateCards, 100);
+        });
+
+        // Set initial state for cards
+        document.querySelectorAll('.member-card, .result-card, .event-card, .gallery-item').forEach(card => {
+            card.style.opacity = '0';
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.4s ease-out';
+        });
+    </script>
+</body>
+</html>
