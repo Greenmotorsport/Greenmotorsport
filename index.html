@@ -981,6 +981,29 @@
                 padding: 20px;
             }
         }
+        @media (max-width: 768px) {
+    .calendar-events::before {
+        display: none;
+    }
+    
+    .event-card {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        margin-bottom: 25px;
+        padding: 20px;
+    }
+    
+    .event-card::before {
+        display: none;
+    }
+    
+    .event-card:nth-child(odd),
+    .event-card:nth-child(even) {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
     </style>
 </head>
 <body>
